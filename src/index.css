@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --btn-primary-bg: #00BCD4;   
-  --btn-secondary-bg: #666C72;    
-  --bg-foreground:#1c1c1c;
+  --btn-primary-bg: #00bcd4;
+  --btn-secondary-bg: #666c72;
+  --bg-foreground: #1c1c1c;
   --bg-primary: #181818;
   --icons: #6c757d;
 }
@@ -25,7 +25,7 @@
 }
 
 .background-login {
-    background-color: #F3F7FA;
+  background-color: #f3f7fa;
 }
 
 .icon-color {
@@ -138,4 +138,28 @@
   font-family: "Poppins", sans-serif;
   font-weight: 900;
   font-style: italic;
+}
+
+.scrollbar {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #464646 #1e1e1e;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #464646;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #6b6b6b;
 }

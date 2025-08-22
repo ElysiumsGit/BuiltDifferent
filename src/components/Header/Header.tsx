@@ -6,16 +6,17 @@ import { CgMenuGridO } from "react-icons/cg";
 const Header = () => {
   return (
     <header className="flex foreground-primary text-white px-6 py-3 shadow-md justify-between border-b border-b-[#464646]">
-      <section className="flex items-center gap-4 w-5xl">   
-        <CgMenuGridO size={30}/>
-        <TextFieldSearch/>
+      <section className="flex items-center gap-4 w-5xl">
+        <h1 className="poppins-semibold text-lg">BUILT DIFFERENT</h1>
+        <CgMenuGridO size={30} />
+        <TextFieldSearch />
       </section>
       <section className="flex items-center space-x-6">
-        <FiBell size={20} className="icon-color"/>
+        <FiBell size={20} className="icon-color" />
         <div className="h-5 border-l border-gray-500"></div>
-        <FiGlobe size={20} className="icon-color"/>
-        <FiMoon size={20} className="icon-color"/>
-        <FiSettings size={20} className="icon-color"/>
+        <FiGlobe size={20} className="icon-color" />
+        <FiMoon size={20} className="icon-color" />
+        <FiSettings size={20} className="icon-color" />
         <div className="h-5 border-l border-gray-500"></div>
         <div className="flex items-center space-x-2">
           <FaUserCircle size={32} className="text-gray-300" />

@@ -4,21 +4,22 @@ import Dashboard from "../pages/Dashboard"; // Layout with SideNavigation + Head
 import DashboardContent from "../content/DashboardContent";
 import Login from "../pages/Login";
 import Signup from "../pages/Signup";
+import FileManager from "../pages/FileManager";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
-      { index: true, element: <Login/> },
-      { path: "signup", element: <Signup/> },
+      { index: true, element: <Login /> },
+      { path: "signup", element: <Signup /> },
     ],
   },
   {
     path: "/dashboard",
     element: <Dashboard />,
     children: [
-      { index: true, element: <DashboardContent/> },
+      { index: true, element: <DashboardContent /> },
       { path: "wallet", element: <div>Wallet Page</div> },
 
       { path: "users/list", element: <div>User List Page</div> },
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
       { path: "inbox", element: <div>Inbox Page</div> },
       { path: "chat", element: <div>Chat Page</div> },
       { path: "blog", element: <div>Blog Article Page</div> },
-      { path: "files", element: <div>File Manager Page</div> },
+      { path: "files", element: <FileManager /> },
       { path: "todo", element: <div>Todo Page</div> },
 
       { path: "plugins/bootstrap", element: <div>Bootstrap UI Page</div> },
