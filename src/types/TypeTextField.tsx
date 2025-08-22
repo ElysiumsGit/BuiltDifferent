@@ -37,4 +37,5 @@ export type SidebarItemProps = {
   label: string;
   icon: ReactNode;
   children?: ReactNode;
+  to?: string;
 };
