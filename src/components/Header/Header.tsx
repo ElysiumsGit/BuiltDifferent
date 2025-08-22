@@ -5,7 +5,7 @@ import { CgMenuGridO } from "react-icons/cg";
 
 const Header = () => {
   return (
-    <header className="flex foreground-primary text-white px-6 py-3 shadow-md justify-between">
+    <header className="flex foreground-primary text-white px-6 py-3 shadow-md justify-between border-b border-b-[#464646]">
       <section className="flex items-center gap-4 w-5xl">   
         <CgMenuGridO size={30}/>
         <TextFieldSearch/>

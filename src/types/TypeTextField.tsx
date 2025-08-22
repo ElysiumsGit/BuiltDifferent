@@ -1,4 +1,7 @@
 // export type InputChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => void;
+
+import type { ReactNode } from "react";
+
 // // types/TypeTextField.ts
 export type TextFieldProps = {
     label?: string;
@@ -9,7 +12,7 @@ export type TextFieldProps = {
     name?: string;
 };
 
-export type TextFieldSearchProps {
+export type TextFieldSearchProps = {
   value?: string;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   placeholder?: string;
@@ -28,4 +31,10 @@ export type ButtonProps = {
     className?: string;
     icon?: string; 
     iconAlt?: string;
+};
+
+export type SidebarItemProps = {
+  label: string;
+  icon: ReactNode;
+  children?: ReactNode;
 };
